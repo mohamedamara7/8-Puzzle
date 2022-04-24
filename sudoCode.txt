@@ -1,0 +1,13 @@
+Sudo code for all uninformed and informed search:
+
+search(intial_state):
+	create node { state , path , cost , ... }
+	initialize fringe with initial state
+	while fringe is not empty :
+		pick a node from the fringe according to the search strategy
+		if visited : continue
+		if goal : return solution
+		from state get possible actions
+		from actions generate next states
+		append successors to the fringe
+	return failure
